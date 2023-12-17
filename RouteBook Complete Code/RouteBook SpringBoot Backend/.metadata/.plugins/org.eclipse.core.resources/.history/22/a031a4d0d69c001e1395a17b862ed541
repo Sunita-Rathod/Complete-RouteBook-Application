@@ -1,0 +1,5 @@
+package com.mentormind.routebook.entity;
+
+public class User {
+
+}

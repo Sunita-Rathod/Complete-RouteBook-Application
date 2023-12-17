@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.mentormind.routebook.repository.UserRepository"/>
+    <fullyQualifiedTypeName name="com.mentormind.routebook.repository.RouteRepository"/>
+    <fullyQualifiedTypeName name="com.mentormind.routebook.repository.ReviewRepository"/>
+    <fullyQualifiedTypeName name="com.mentormind.routebook.repository.FavouriteRepository"/>
+    <fullyQualifiedTypeName name="com.mentormind.routebook.service.UserService"/>
+    <fullyQualifiedTypeName name="com.mentormind.routebook.entity.User"/>
+    <fullyQualifiedTypeName name="com.mentormind.routebook.service.RouteService"/>
+    <fullyQualifiedTypeName name="com.mentormind.routebook.entity.Route"/>
+    <fullyQualifiedTypeName name="com.mentormind.routebook.service.ReviewService"/>
+    <fullyQualifiedTypeName name="com.mentormind.routebook.entity.Review"/>
+    <fullyQualifiedTypeName name="com.mentormind.routebook.service.FavouriteService"/>
+    <fullyQualifiedTypeName name="com.mentormind.routebook.entity.Favourite"/>
+</qualifiedTypeNameHistroy>
