@@ -1,0 +1,57 @@
+package com.mentormind.routebook.entity;
+
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "users")
+public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int userId;
+
+    private String username;
+    private String email;
+    private String password;
+    private String contact;
+    private String token;
+    private String role;
+
+
+
+public User() {}
+
+//In User entity
+@OneToMany (mappedBy = "user" ) //, cascade = CascadeType.ALL
+//@JsonManagedReference("user-reviews") // Forward reference
+@JsonIgnore
+private List<Review> reviews;
+
+//In User entity
+@OneToMany (mappedBy = "user") //, cascade = CascadeType.ALL
+//@JsonManagedReference("user-favourites") // Forward reference
+@JsonIgnore
+private List<Favourite> favourites;
+
+//In User entity
+@OneToMany (mappedBy = "user" ) //, cascade = CascadeType.ALL
+//@JsonManagedReference("user-routes") // Forward reference
+@JsonIgnore
+
+private List<Route> routes;
+
+
+
+  
+}

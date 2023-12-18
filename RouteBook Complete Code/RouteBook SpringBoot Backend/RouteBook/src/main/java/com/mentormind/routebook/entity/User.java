@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,11 +22,20 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int userId;
 
+    @Column(unique = true)
     private String username;
+    
+    private String name;
+    
+    @Column(unique = true)
     private String email;
+    
     private String password;
-    private boolean isAdmin;
+    
+    @Column(unique = true)
     private String contact;
+    private String token;
+    private String role;
 
 public User() {}
 
@@ -48,16 +58,17 @@ private List<Favourite> favourites;
 
 private List<Route> routes;
 
-
-public User(int userId, String username, String email, String password, boolean isAdmin, String contact,
-		List<Review> reviews, List<Favourite> favourites, List<Route> routes) {
+public User(int userId, String username, String name, String email, String password, String contact, String token,
+		String role, List<Review> reviews, List<Favourite> favourites, List<Route> routes) {
 	super();
 	this.userId = userId;
 	this.username = username;
+	this.name = name;
 	this.email = email;
 	this.password = password;
-	this.isAdmin = isAdmin;
 	this.contact = contact;
+	this.token = token;
+	this.role = role;
 	this.reviews = reviews;
 	this.favourites = favourites;
 	this.routes = routes;
@@ -79,6 +90,14 @@ public void setUsername(String username) {
 	this.username = username;
 }
 
+public String getName() {
+	return name;
+}
+
+public void setName(String name) {
+	this.name = name;
+}
+
 public String getEmail() {
 	return email;
 }
@@ -95,20 +114,28 @@ public void setPassword(String password) {
 	this.password = password;
 }
 
-public boolean isAdmin() {
-	return isAdmin;
-}
-
-public void setAdmin(boolean isAdmin) {
-	this.isAdmin = isAdmin;
-}
-
 public String getContact() {
 	return contact;
 }
 
 public void setContact(String contact) {
 	this.contact = contact;
+}
+
+public String getToken() {
+	return token;
+}
+
+public void setToken(String token) {
+	this.token = token;
+}
+
+public String getRole() {
+	return role;
+}
+
+public void setRole(String role) {
+	this.role = role;
 }
 
 public List<Review> getReviews() {
@@ -137,10 +164,9 @@ public void setRoutes(List<Route> routes) {
 
 @Override
 public String toString() {
-	return "User [userId=" + userId + ", username=" + username + ", email=" + email + ", password=" + password
-			+ ", isAdmin=" + isAdmin + ", contact=" + contact + ", reviews=" + reviews + ", favourites=" + favourites
-			+ ", routes=" + routes + "]";
+	return "User [userId=" + userId + ", username=" + username + ", name=" + name + ", email=" + email + ", password="
+			+ password + ", contact=" + contact + ", token=" + token + ", role=" + role + ", reviews=" + reviews
+			+ ", favourites=" + favourites + ", routes=" + routes + "]";
 }
- 
-    
+
 }
