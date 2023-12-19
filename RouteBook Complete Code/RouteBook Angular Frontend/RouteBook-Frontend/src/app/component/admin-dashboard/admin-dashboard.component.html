@@ -1,3 +1,62 @@
 <h1>Admin Dashboard</h1>
 
 <button class="btn btn-outline-success" (click)="logout()">Logout</button>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - RouteBook</title>
+    <style>
+        /* Add your custom styles here */
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .admin-dashboard {
+            padding: 20px;
+        }
+
+        .admin-card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid admin-dashboard">
+        <div class="row">
+            <div class="col-md-3">
+                <!-- Sidebar -->
+                <div class="admin-card">
+                    <h5>Admin Dashboard</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Routes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Users</a>
+                        </li>
+                        <!-- Add more menu items as needed -->
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <!-- Main Content -->
+                <div class="admin-card">
+                    <!-- Add Angular components or content for managing routes -->
+                    <h5>Routes Management</h5>
+                    <!-- Placeholder content -->
+                    <p>This is where you can manage routes.</p>
+                </div>
+                <div class="admin-card">
+                    <!-- Add Angular components or content for managing users -->
+                    <h5>Users Management</h5>
+                    <!-- Placeholder content -->
+                    <p>This is where you can manage users.</p>
+                </div>
+                <!-- Add more content as needed -->
+            </div>
+        </div>
+    </div>
+
+   

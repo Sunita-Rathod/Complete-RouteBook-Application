@@ -2,3 +2,10 @@
     background-color: rgb(196, 197, 238);
     
 }
+
+#bg-color-signup {
+    background-color: #f8f9fa; /* Set your desired background color */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}

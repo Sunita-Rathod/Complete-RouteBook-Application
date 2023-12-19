@@ -1,0 +1,62 @@
+
+        h2{
+            text-align: center;
+            font-size: 30px;
+            color: brown;
+        }
+        h2:hover{
+            transform: scale(1.1);
+        }
+        .left{
+            background-image: url('https://images.pond5.com/glowing-neon-maharashtra-india-state-footage-195469067_iconl.jpeg');
+            width: 49%;
+            height: 700px;
+            display: inline-block;
+            position: absolute;
+            left: 10px;
+            top:72px;  
+              
+        }
+        .right{
+            background-image: url('https://cdn.pixabay.com/photo/2020/05/18/11/00/white-light-abstract-5185696_1280.png');
+            width: 49%;
+            height: 700px;
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            top:72px;  
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+
+        }
+        .box1{
+            margin-top: 69px;
+        }
+
+        .item{
+            margin: 19px;
+            width: 270px;
+            height: 250px;
+            border-radius: 15px;
+        }
+      
+        .item img{
+            width:270px;
+            height: 250px;
+            border-radius: 15px;
+        }
+        img:hover{
+            transform: scale(1.1);
+        }
+        .container1{
+            margin-top: 250px;
+            font-size: 18px;
+        }
+        .right p{
+           padding-left: 20px;
+           padding-right: 20px;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+      

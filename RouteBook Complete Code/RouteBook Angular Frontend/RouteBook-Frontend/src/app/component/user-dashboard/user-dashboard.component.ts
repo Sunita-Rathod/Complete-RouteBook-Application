@@ -8,12 +8,14 @@ import { Router } from '@angular/router';
 })
 export class UserDashboardComponent implements OnInit {
 
+
   constructor(private route : Router) { }
 
   ngOnInit(): void {
   }
 
   logout() {
+    alert('Logout clicked!');
     localStorage.removeItem("token");
     this.route.navigate(['/']);
   }
