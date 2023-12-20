@@ -2,8 +2,7 @@
     <div class="logo">User Dashboard</div>
     <button class="logout-btn" (click)="logout()">LogOut</button>
 </nav>
-
-<!DOCTYPE html>    
+  
  <div class="container-fluid">
     <div class="row">
         <!-- Sidebar -->
@@ -11,7 +10,7 @@
             <div class="sidebar-sticky">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">
+                        <a class="nav-link active" [routerLink]="['/user']">
                             <i class="fas fa-home"></i> Dashboard
                         </a>
                     </li>

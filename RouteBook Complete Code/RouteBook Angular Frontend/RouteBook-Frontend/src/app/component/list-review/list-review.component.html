@@ -1,0 +1,17 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Review ID</th>
+        <th scope="col">Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let review of reviews">
+        <th scope="row">{{ review.reviewId }}</th>
+        <td>{{ review.rating }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <!-- <p>User ID:{{review.userId}}</p>
+    <p>Route ID:{{review.routeId}}</p> -->

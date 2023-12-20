@@ -10,8 +10,14 @@ import { Thumbnail3Component } from './component/thumbnail3/thumbnail3.component
 import { Thumbnail4Component } from './component/thumbnail4/thumbnail4.component';
 import { BlogComponent } from './component/blog/blog.component';
 import { ContactUsComponent } from './component/contact-us/contact-us.component';
-import { MyProfileComponent } from './component/my-profile/my-profile.component';
 import { ReviewsComponent } from './component/reviews/reviews.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { ListUserComponent } from './component/list-user/list-user.component';
+import { UpdateUserComponent } from './component/update-user/update-user.component';
+import { DeleteUserComponent } from './component/delete-user/delete-user.component';
+import { ListReviewComponent } from './component/list-review/list-review.component';
+import { ListFavouriteComponent } from './component/list-favourite/list-favourite.component';
+import { ListRouteComponent } from './component/list-route/list-route.component';
 
 const routes: Routes = [
   {path:'', component: LoginComponent},
@@ -24,8 +30,14 @@ const routes: Routes = [
   {path:'thumbnail4', component:Thumbnail4Component},
   {path:'blog',component:BlogComponent},
   {path:'contact-us',component:ContactUsComponent},
-  {path:'my-profile',component:MyProfileComponent},
   {path:'review',component:ReviewsComponent},
+  {path:'footer', component:FooterComponent},
+  {path:'list-user',component:ListUserComponent},
+  {path:'update-user/:id',component:UpdateUserComponent},
+  {path:'delete-user/:id',component:DeleteUserComponent},
+{path:'list-reviews' ,component:ListReviewComponent},
+{path:'list-favourites' ,component:ListFavouriteComponent},
+{path:'list-routes' ,component:ListRouteComponent},
 
 ];
 

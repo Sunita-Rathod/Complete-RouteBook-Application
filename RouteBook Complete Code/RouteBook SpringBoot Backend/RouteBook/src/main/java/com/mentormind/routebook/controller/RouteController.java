@@ -20,7 +20,7 @@ import com.mentormind.routebook.service.RouteService;
 
 @RestController
 @RequestMapping("/routes")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins ="http://localhost:4200")
 
 public class RouteController {
 

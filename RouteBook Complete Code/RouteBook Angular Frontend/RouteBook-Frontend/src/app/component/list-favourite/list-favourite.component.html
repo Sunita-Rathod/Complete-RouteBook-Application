@@ -1,0 +1,20 @@
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr>
+          <th>Favourite ID</th>
+          <th>User</th>
+          <th>Route</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let favourite of favourites">
+          <td>{{ favourite.favId }}</td>
+          <td>{{ favourite.user | json }}</td>
+          <td>{{ favourite.route | json }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

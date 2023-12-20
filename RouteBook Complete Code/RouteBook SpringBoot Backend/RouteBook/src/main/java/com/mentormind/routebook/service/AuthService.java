@@ -55,7 +55,6 @@ public class AuthService {
                 existingUser.getEmail() != null &&
                 existingUser.getPassword() != null &&
                 existingUser.getRole() != null &&
-               // BCrypt.checkpw(user.getPassword(), existingUser.getPassword()) &&
                 existingUser.getRole().equals(user.getRole())) {
                 existingUser.setPassword("");
                 return existingUser;

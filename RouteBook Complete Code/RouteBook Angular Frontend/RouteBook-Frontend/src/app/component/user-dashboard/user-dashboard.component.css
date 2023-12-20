@@ -76,3 +76,7 @@ nav {
 .logout-btn:hover {
     background-color: #c82333;
 }
+
+img:hover{
+    transform: scale(1.1);
+}

@@ -77,3 +77,8 @@
         bg-color{
             background-color: #333;
         }
+        .color{
+            color: rgb(60, 91, 91);
+            text-align: center;
+            text-decoration: solid;
+        }

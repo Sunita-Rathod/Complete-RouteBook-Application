@@ -15,8 +15,14 @@ import { Thumbnail3Component } from './component/thumbnail3/thumbnail3.component
 import { Thumbnail4Component } from './component/thumbnail4/thumbnail4.component';
 import { BlogComponent } from './component/blog/blog.component';
 import { ContactUsComponent } from './component/contact-us/contact-us.component';
-import { MyProfileComponent } from './component/my-profile/my-profile.component';
 import { ReviewsComponent } from './component/reviews/reviews.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { ListUserComponent } from './component/list-user/list-user.component';
+import { UpdateUserComponent } from './component/update-user/update-user.component';
+import { DeleteUserComponent } from './component/delete-user/delete-user.component';
+import { ListReviewComponent } from './component/list-review/list-review.component';
+import { ListFavouriteComponent } from './component/list-favourite/list-favourite.component';
+import { ListRouteComponent } from './component/list-route/list-route.component';
 
 @NgModule({
   declarations: [
@@ -31,8 +37,14 @@ import { ReviewsComponent } from './component/reviews/reviews.component';
     Thumbnail4Component,
     BlogComponent,
     ContactUsComponent,
-    MyProfileComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    FooterComponent,
+    ListUserComponent,
+    UpdateUserComponent,
+    DeleteUserComponent,
+    ListReviewComponent,
+    ListFavouriteComponent,
+    ListRouteComponent
   ],
   imports: [
     BrowserModule,
