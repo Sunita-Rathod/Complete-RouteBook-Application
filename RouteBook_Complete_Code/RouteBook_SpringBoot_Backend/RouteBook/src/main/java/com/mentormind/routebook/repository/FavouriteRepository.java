@@ -8,6 +8,6 @@ import com.mentormind.routebook.entity.Favourite;
 
 
 @Repository
-public interface FavouriteRepository extends JpaRepository<Favourite, Integer> {
+public interface FavouriteRepository extends JpaRepository <Favourite, Integer> {
 	
 }

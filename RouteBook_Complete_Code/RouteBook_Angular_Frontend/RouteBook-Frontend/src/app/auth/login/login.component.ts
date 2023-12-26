@@ -39,18 +39,18 @@ export class LoginComponent {
     this.authService.login(this.user).subscribe(res => {
 
       if(res == null) {
-        alert("Username or password is wrong");
+        alert("Please fill up  the all fields!");
         this.ngOnInit();
       }else {
         console.log("Login successful");
         localStorage.setItem("token",res.token);
 
         if(this.role == 'user') {
-          this.route.navigate(['/user']);
+          this.route.navigate(['/user-dashboard']);
         } 
 
         if( this.role == 'admin') {
-          this.route.navigate(['/admin']);
+          this.route.navigate(['/admin-dashboard']);
         }
 
       }

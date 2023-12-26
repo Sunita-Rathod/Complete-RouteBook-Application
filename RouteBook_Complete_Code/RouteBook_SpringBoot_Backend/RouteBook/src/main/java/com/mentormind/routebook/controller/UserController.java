@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.*;
 import com.mentormind.routebook.entity.User;
 import com.mentormind.routebook.service.UserService;
 
+import jakarta.validation.Valid;
+
 import java.util.List;
 @CrossOrigin(origins="http://localhost:4200")
 @RestController
@@ -16,7 +18,7 @@ public class UserController {
 
 	// Create a new user
 	@PostMapping("/create-user")
-	public String createUser(@RequestBody User user) {
+	public String createUser(@Valid @RequestBody User user) {
 
 		try {
 			userService.createUser(user);
