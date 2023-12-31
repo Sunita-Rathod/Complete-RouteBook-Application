@@ -27,38 +27,37 @@ public class User {
     private int userId;
 
    
-    @Column(unique = true ,nullable=false)
-    @NotEmpty
-    @Size(min=3 , message="Username should have atleast 3 characters!")
+   
+    //@Size(min=3 , message="Username should have atleast 3 characters!")
     private String username;
     
-    @NotNull
-    @Size(max=30 , message="Name should have atmost 20 characters!")
+    //@NotNull
+    //@Size(max=30 , message="Name should have atmost 20 characters!")
 
     private String name;
     
-    @NotNull
-    @Column(unique = true)
-    @Email
+    //@NotNull
+   // @Column(unique = true)
+    //@Email
     private String email;
     
-    @NotNull
-    @NotEmpty
-    @Size(min=8 , message="Password should have atleast 3 characters!")
+//    @NotNull
+//    @NotEmpty
+//    @Size(min=8 , message="Password should have atleast 3 characters!")
 
     private String password;
     
-    @NotNull
-    @Column(unique = true)
-    @NotEmpty
+//    @NotNull
+//    @Column(unique = true)
+//    @NotEmpty
     private String contact;
     
-    @NotNull
-    @NotEmpty
+//    @NotNull
+//    @NotEmpty
     private String token;
     
-    @NotNull
-    @NotEmpty
+//    @NotNull
+//    @NotEmpty
     private String role;
 
 public User() {}

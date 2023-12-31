@@ -18,12 +18,13 @@ import { DeleteUserComponent } from './component/delete-user/delete-user.compone
 import { ListReviewComponent } from './component/list-review/list-review.component';
 import { ListFavouriteComponent } from './component/list-favourite/list-favourite.component';
 import { ListRouteComponent } from './component/list-route/list-route.component';
+import { HomeComponent } from './component/home/home.component';
 
 const routes: Routes = [
-  {path:'', component: LoginComponent},
+  {path:'login', component: LoginComponent},
   {path:'signup', component: SignupComponent},
-  {path: 'user', component: UserDashboardComponent},
-  {path: 'admin', component:AdminDashboardComponent},
+  {path: 'user-dashboard', component: UserDashboardComponent},
+  {path: 'admin-dashboard', component:AdminDashboardComponent},
   {path:'thumbnail1', component:Thumbnail1Component},
   {path:'thumbnail2', component:Thumbnail2Component},
   {path:'thumbnail3', component:Thumbnail3Component},
@@ -38,6 +39,7 @@ const routes: Routes = [
 {path:'list-reviews' ,component:ListReviewComponent},
 {path:'list-favourites' ,component:ListFavouriteComponent},
 {path:'list-routes' ,component:ListRouteComponent},
+{path:'' , component:HomeComponent}
 
 ];
 

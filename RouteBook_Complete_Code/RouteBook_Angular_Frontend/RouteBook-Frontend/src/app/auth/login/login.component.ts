@@ -43,6 +43,7 @@ export class LoginComponent {
         this.ngOnInit();
       }else {
         console.log("Login successful");
+        alert("Login successful")
         localStorage.setItem("token",res.token);
 
         if(this.role == 'user') {
