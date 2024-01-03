@@ -39,7 +39,7 @@ export class LoginComponent {
     this.authService.login(this.user).subscribe(res => {
 
       if(res == null) {
-        alert("Please fill up  the all fields!");
+        alert("Username or Password is Wrong!");
         this.ngOnInit();
       }else {
         console.log("Login successful");

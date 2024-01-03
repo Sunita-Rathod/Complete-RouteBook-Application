@@ -17,7 +17,7 @@ export class UserDashboardComponent implements OnInit {
   logout() {
     alert('Logout clicked!');
     localStorage.removeItem("token");
-    this.route.navigate(['/']);
+    this.route.navigate(['/login']);
   }
 
 }

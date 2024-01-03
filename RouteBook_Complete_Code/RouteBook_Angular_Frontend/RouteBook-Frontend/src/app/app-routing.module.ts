@@ -19,11 +19,14 @@ import { ListReviewComponent } from './component/list-review/list-review.compone
 import { ListFavouriteComponent } from './component/list-favourite/list-favourite.component';
 import { ListRouteComponent } from './component/list-route/list-route.component';
 import { HomeComponent } from './component/home/home.component';
+import { AboutUsComponent } from './component/about-us/about-us.component';
+import { UserNavbarComponent } from './component/user-navbar/user-navbar.component';
 
 const routes: Routes = [
   {path:'login', component: LoginComponent},
   {path:'signup', component: SignupComponent},
   {path: 'user-dashboard', component: UserDashboardComponent},
+  {path:'user-navbar', component:UserNavbarComponent},
   {path: 'admin-dashboard', component:AdminDashboardComponent},
   {path:'thumbnail1', component:Thumbnail1Component},
   {path:'thumbnail2', component:Thumbnail2Component},
@@ -39,7 +42,8 @@ const routes: Routes = [
 {path:'list-reviews' ,component:ListReviewComponent},
 {path:'list-favourites' ,component:ListFavouriteComponent},
 {path:'list-routes' ,component:ListRouteComponent},
-{path:'' , component:HomeComponent}
+{path:'' , component:HomeComponent} ,
+{path:'about-us', component:AboutUsComponent} ,
 
 ];
 

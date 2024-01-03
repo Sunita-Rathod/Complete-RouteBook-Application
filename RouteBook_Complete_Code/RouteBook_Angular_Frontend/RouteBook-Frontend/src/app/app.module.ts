@@ -24,9 +24,9 @@ import { ListReviewComponent } from './component/list-review/list-review.compone
 import { ListFavouriteComponent } from './component/list-favourite/list-favourite.component';
 import { ListRouteComponent } from './component/list-route/list-route.component';
 import { HomeComponent } from './component/home/home.component';
-import { AboutUsComponent } from './about-us/about-us.component';
-import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
-import { UserNavbarComponent } from './user-navbar/user-navbar.component';
+import { AboutUsComponent } from './component/about-us/about-us.component';
+import { AdminNavbarComponent } from './component/admin-navbar/admin-navbar.component';
+import { UserNavbarComponent } from './component/user-navbar/user-navbar.component';
 import { HomeNavbarComponent } from './component/home-navbar/home-navbar.component';
 
 @NgModule({
