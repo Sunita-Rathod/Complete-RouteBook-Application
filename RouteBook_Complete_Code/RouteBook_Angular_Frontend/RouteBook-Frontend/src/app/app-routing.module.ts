@@ -21,6 +21,7 @@ import { ListRouteComponent } from './component/list-route/list-route.component'
 import { HomeComponent } from './component/home/home.component';
 import { AboutUsComponent } from './component/about-us/about-us.component';
 import { UserNavbarComponent } from './component/user-navbar/user-navbar.component';
+import { DeleteRouteComponent } from './component/delete-route/delete-route.component';
 
 const routes: Routes = [
   {path:'login', component: LoginComponent},
@@ -44,7 +45,7 @@ const routes: Routes = [
 {path:'list-routes' ,component:ListRouteComponent},
 {path:'' , component:HomeComponent} ,
 {path:'about-us', component:AboutUsComponent} ,
-
+  { path: 'delete-route/:routeId', component: DeleteRouteComponent },
 ];
 
 @NgModule({

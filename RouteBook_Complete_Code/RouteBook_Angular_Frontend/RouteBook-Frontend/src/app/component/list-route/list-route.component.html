@@ -1,1 +1,27 @@
-<p>list-route works!</p>
+
+<app-admin-navbar></app-admin-navbar>
+<h2>Routes List</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Route ID</th>
+      <th>Source</th>
+      <th>Destination</th>
+      <th>Description</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let route of routes">
+      <td>{{ route.routeId }}</td>
+      <td>{{ route.source }}</td>
+      <td>{{ route.destination }}</td>
+      <td>{{ route.description }}</td>
+      <td>
+        <button  class="btn btn-primary">Update</button>
+        <button  class="btn btn-secondary">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

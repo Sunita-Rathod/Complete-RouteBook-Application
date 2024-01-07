@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.mentormind.routebook.entity.Review;
 import com.mentormind.routebook.service.ReviewService;
 
-
 @RestController
 @RequestMapping("/reviews")
 @CrossOrigin(origins = "http://localhost:4200")

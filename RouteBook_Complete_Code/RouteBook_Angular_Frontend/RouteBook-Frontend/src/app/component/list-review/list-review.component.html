@@ -5,12 +5,18 @@
       <tr>
         <th scope="col">Review ID</th>
         <th scope="col">Rating</th>
+        <th scope="col">UserId</th>
+        <th scope="col">routeId</th>
+
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let review of reviews">
-        <th scope="row">{{ review.reviewId }}</th>
+        <td scope="row">{{ review.reviewId }}</td>
         <td>{{ review.rating }}</td>
+        <td>{{ review.rating }}</td>
+        <td>{{ review.rating }}</td>
+          
       </tr>
     </tbody>
   </table>

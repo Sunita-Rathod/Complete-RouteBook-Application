@@ -28,6 +28,7 @@ import { AboutUsComponent } from './component/about-us/about-us.component';
 import { AdminNavbarComponent } from './component/admin-navbar/admin-navbar.component';
 import { UserNavbarComponent } from './component/user-navbar/user-navbar.component';
 import { HomeNavbarComponent } from './component/home-navbar/home-navbar.component';
+import { DeleteRouteComponent } from './component/delete-route/delete-route.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,9 @@ import { HomeNavbarComponent } from './component/home-navbar/home-navbar.compone
     AboutUsComponent,
     AdminNavbarComponent,
     UserNavbarComponent,
-    HomeNavbarComponent
+    HomeNavbarComponent,
+    UpdateUserComponent,
+    DeleteRouteComponent
   ],
   imports: [
     BrowserModule,
